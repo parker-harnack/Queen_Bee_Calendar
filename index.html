@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queen Calendar CSV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <form>
-        <label>
-          What date are you grafting?
-          <input type="date" name="bday" />
-        </label>
-      
-        <p><button>Submit</button></p>
-    </form>
-      
+    <div class="date-picker">
+        <form class="outside-form">
+            <label class="message-label">
+            What date are you grafting?
+            <input type="date" name="queenday"/>
+            </label>
+        
+            <p><button onclick="getQueenCalendar()" type="button" class="submit-button">Submit</button></p>
+        </form>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
